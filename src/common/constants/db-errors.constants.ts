@@ -1,0 +1,4 @@
+export const DB_ERROR_CODES = {
+  UNIQUE_CONSTRAIN: '23505',
+  NOT_NULL_CONSTRAIN: '23502',
+};
