@@ -1,8 +1,11 @@
 {
-    "material-icon-theme.activeIconPack": "nest",
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "material-icon-theme.activeIconPack": "nest",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "material-icon-theme.files.associations": {
+    "*.controller.ts": "nest-controller"
+  }
 }
