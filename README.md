@@ -35,6 +35,12 @@ $ docker-compose up -d
 $ yarn start:dev
 ```
 
+8. Ejecutar Seed
+
+```
+http://localhost:3000/api/seed
+```
+
 ## Stack Usado
 
 - PostgreSQL
