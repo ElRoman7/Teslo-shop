@@ -29,7 +29,7 @@ export class AuthService {
 
       return {
         ...user,
-        token: this.getJwt({ email: user.email }),
+        token: this.getJwt({ id: user.id }),
       };
     } catch (error) {
       this.errorHandlerService.handleDBException(error);
@@ -41,7 +41,7 @@ export class AuthService {
     const { email, password } = loginUserDto;
     const user = await this.userRepository.findOne({
       where: { email },
-      select: ['email', 'password'],
+      select: ['email', 'password', 'id'],
     });
 
     if (!user) {
@@ -53,7 +53,7 @@ export class AuthService {
 
     return {
       ...user,
-      token: this.getJwt({ email: user.email }),
+      token: this.getJwt({ id: user.id }),
     };
     // TODO: Implement JWT token generation
   }
